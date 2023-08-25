@@ -9,7 +9,7 @@ if [ ! -d $VIRUALENV ]; then
 fi
 
 if [ ! -f $VIRUALENV/bin/pip ]; then
-    curl --silent --show-eror --retry 5 https://bootstrap.pypa.io/get-pip.py $VIRUALENV
+    curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py $VIRUALENV
 fi
 
 $VIRUALENV/bin/pip install -r requirements.txt
